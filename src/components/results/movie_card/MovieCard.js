@@ -1,7 +1,7 @@
 import React from 'react'
 import './StyleMovieCard.css'
 
-export default function MovieCard() {
+export const MovieCard = () =>{
     return (
         <div className = 'card'>
             movie card

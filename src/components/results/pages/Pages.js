@@ -1,10 +1,11 @@
 import React from 'react'
 import './StylePages.css'
 
-export default function Pages() {
+export const Pages = (props) => {
     return (
         <div className = 'pages'>
-            pages
+            current page = {props.currentPage}
+            pages = {props.pages}
         </div>
     )
 }
