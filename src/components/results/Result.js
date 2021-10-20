@@ -4,16 +4,14 @@ import {MovieCard} from './movie_card/MovieCard'
 import {Pages} from './pages/Pages'
 
 export const Result = (props) => {
+    const movies = props.movies;
+
+    const movieList = movies.map((movie)=> <MovieCard displayMovie={movie} />);
+
     return (
         <div className = 'result'>
             <div> result </div>
-            {/*props.currentPage*/}
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
+            {movieList}
             <Pages currentPage = {props.currentPage} pages = {props.pages}/>
         </div>
     );

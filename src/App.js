@@ -1,14 +1,11 @@
+import { searchMovies } from './api/searchMovies';
 import './App.css';
 import {FormRicerca} from './components/form_ricerca/FormRicerca';
 import {Result} from './components/results/Result'
 
 function App() {
-  const results = {
-    movies: [],
-    pages : 10,
-    currentPage: 1
-  }
-
+  const results = searchMovies();
+  
   return (
     <div className="App">
       <FormRicerca />
