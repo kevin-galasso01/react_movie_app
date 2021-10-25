@@ -1,9 +1,9 @@
 import React from 'react'
 import './StyleMovieCard.css'
 
-export const MovieCard = (props) =>{
+export const MovieCard = (props) => {
     return (
-        <div className = 'card'>
+        <div className='card'>
             <p>Titolo: {props.displayMovie.title}</p>
             <p>Descrizione: {props.displayMovie.desciption}</p>
             <p>Img: {props.displayMovie.img}</p>
