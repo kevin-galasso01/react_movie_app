@@ -14,10 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      {/*si deve usare arrow function quando si deve passare un parametro all' onClick*/}
-      <button onClick={() => handleClick("series")}>Cerca serie</button>
-      <button onClick={() => handleClick("film")}>Cerca film</button>
-      <FormRicerca />
+      <FormRicerca funzione={handleClick}/>
       <Result pages={results.pages} currentPage={results.currentPage} movies={results.movies} />
     </div>
   );
